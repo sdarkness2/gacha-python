@@ -3,6 +3,7 @@ from time import sleep
 
 parar = 0
 
+
 while parar != 1:
 
     escolha = input("""BANNER DE PERSONAGENS
@@ -19,16 +20,23 @@ QUAL A SUA OPÇÃO? """)
         sleep(1)
         funcoes.tiro()
         sleep(1)
+        parar = int(input("""DESEJA PARAR DE ATIRAR?
+[1]SIM
+[2]NÃO
+QUAL SUA OPÇÃO? """))
     elif escolha == "2":
         for i in range(10):
             sleep(1)
             funcoes.tiro()
             sleep(1)
+        parar = int(input("""DESEJA PARAR DE ATIRAR?
+[1]SIM
+[2]NÃO
+QUAL SUA OPÇÃO? """))
     elif escolha == "3":
         funcoes.lervalores()
-    parar = int(input("""DESEJA PARAR DE ATIRAR?
-     [1]SIM
-     [2]NÃO
-     QUAL SUA OPÇÃO? """))
+    else:
+        print("Você não digitou uma opção valida.")
+
 
 print("Obrigado por usar o programa.")
