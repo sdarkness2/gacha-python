@@ -31,7 +31,7 @@ def tiro():
     if funcoesadicao.pitCinco() == funcoesadicao.pit2Cinco():
         randomize = choice(p5)
         inserirSql(randomize)
-        print("Você recebeu o personagem {}." .format(randomize))
+        print("Você recebeu o personagem \033[1;31m{}\033[0;0m." .format(randomize))
         funcoesadicao.zerarCinco()
         if funcoesadicao.pitQuatro() == funcoesadicao.pit2Quatro():
             funcoesadicao.zerarQuatro()
