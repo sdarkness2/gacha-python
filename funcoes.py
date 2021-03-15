@@ -21,8 +21,8 @@ def inserirSql(aleatorio):
 
 #função para selecionar personagem de forma aleatoria
 def tiro():
-    pit = 0
-    deztiro = 0
+    #pit = 0
+    #deztiro = 0
 
     p5 = ['Diluc', 'Mona', 'Keqing', 'Jean']
     p4 = ['Barbara', 'Fishl', 'Noele', 'Razor']
