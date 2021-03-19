@@ -18,7 +18,7 @@ while parar != 1:
 QUAL A SUA OPÇÃO? """)
     if escolha == "1":
         sleep(1)
-        funcoes.tiro()
+        funcoes.desejos()
         sleep(1)
         parar = int(input("""DESEJA PARAR DE ATIRAR?
 [1]SIM
@@ -27,7 +27,7 @@ QUAL SUA OPÇÃO? """))
     elif escolha == "2":
         for i in range(10):
             sleep(1)
-            funcoes.tiro()
+            funcoes.desejos()
             sleep(1)
         parar = int(input("""DESEJA PARAR DE ATIRAR?
 [1]SIM
